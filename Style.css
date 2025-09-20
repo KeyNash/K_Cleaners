@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #0a4d8c; /* deep blue */
+  color: white;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  height: 90vh;
+  background: url("images/cleaning-bg.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #f4b400;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #d99a00;
+}
+
+/* Footer */
+footer {
+  background: #0a4d8c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
