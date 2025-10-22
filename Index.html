@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K Cleaners | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K Cleaners</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <!-- Navbar -->
+  <header class="navbar">
     <div class="logo">K Cleaners</div>
-    <nav>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <section id="home" class="hero">
+  <!-- Hero Section -->
+  <section class="hero">
     <div class="hero-text">
-      <h1>Welcome to K Cleaners</h1>
-      <p>Your trusted dobi & home cleaning partner.</p>
-      <a href="#services" class="btn">Explore Services</a
+      <h1>Bringing Shine to Every Space</h1>
+      <p>Life’s too short to worry about stains and piles of laundry. At K Cleaners, we handle the mess so you can enjoy the moments that matter. With our professional care, your clothes come back soft, bright, and feeling brand new every single time.</p>
+      <button class="btn-primary">Book a Service</button>
+    </div>
+    <div class="hero-img">
+      <!-- Placeholder for hero image -->
     </div>
   </section>
 
-  <footer>
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <span class="material-icons">local_laundry_service</span>
+        <h3>Laundry</h3>
+        <p>Fresh, clean, and neatly folded — every time.</p>
+      </div>
+      <div class="card">
+        <span class="material-icons">cleaning_services</span>
+        <h3>House Cleaning</h3>
+        <p>Detailed cleaning for spotless comfort.</p>
+      </div>
+      <div class="card">
+        <span class="material-icons">business</span>
+        <h3>Office Cleaning</h3>
+        <p>Keep your workspace fresh and productive.</p>
+      </div>
+      <div class="card">
+        <span class="material-icons">carpenter</span>
+        <h3>Carpet Cleaning</h3>
+        <p>Deep cleaning for a soft, new feel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Why Choose Us?</h2>
+    <p>We bring professionalism, reliability, and attention to detail to every cleaning task. Whether it’s your home or business, we make it sparkle.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
     <p>&copy; 2025 K Cleaners. All rights reserved.</p>
+    <div class="socials">
+      <span class="material-icons">facebook</span>
+      <span class="material-icons">instagram</span>
+      <span class="material-icons">call</span>
+    </div>
   </footer>
 </body>
 </html>
