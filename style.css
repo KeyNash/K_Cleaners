@@ -402,3 +402,66 @@ textarea {
 .footer .material-icons:hover {
   color: #90e0ef;
 }
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .site-tittle { font-size: 2.5rem; }
+  .logo img { width: 120px; }
+  .hero-text h1 { font-size: 3.2rem; }
+}
+
+@media (max-width: 992px) {
+  .Header-container { padding: 1rem 4%; }
+  .nav-links a { padding: 0.6rem 1rem; font-size: 1.05rem; border-radius: 20px; }
+  .hero { height: 65vh; }
+  .hero-text { width: 60%; padding: 48px 28px; }
+  .hero-text h1 { font-size: 2.8rem; }
+  .hero-text p { font-size: 1.25rem; }
+  .card { min-height: 200px; }
+}
+
+@media (max-width: 768px) {
+  .Header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 1rem 5%;
+  }
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+  .nav-links a { font-size: 1rem; padding: 0.5rem 0.9rem; }
+  .site-tittle { font-size: 2rem; }
+  .logo img { width: 110px; }
+  .hero { height: 60vh; }
+  .hero-text {
+    width: 92%;
+    padding: 32px 20px;
+    border-radius: 0;
+  }
+  .hero-text h1 { font-size: 2rem; padding-top: 8px; }
+  .hero-text p { font-size: 1rem; padding-top: 12px; }
+  .service-cards { grid-template-columns: 1fr; gap: 1rem; }
+  .card { padding: 1.25rem; }
+  .contact-container { grid-template-columns: 1fr; }
+  .field-row { grid-template-columns: 1fr; }
+  .contact-submit { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .site-tittle { font-size: 1.6rem; }
+  .logo img { width: 90px; }
+  .nav-links a { font-size: 0.95rem; padding: 0.45rem 0.75rem; }
+  .hero { height: 55vh; background-position: center top; }
+  .hero-text { padding: 20px; width: 94%; }
+  .hero-text h1 { font-size: 1.6rem; line-height: 1.15; }
+  .hero-text p { font-size: 0.95rem; }
+  .btn-primary { padding: 0.7rem 1.2rem; font-size: 0.95rem; }
+  .card-headers { font-size: 1.4rem; }
+  .items { font-size: 1.05rem; }
+  .card { min-height: 160px; }
+}
