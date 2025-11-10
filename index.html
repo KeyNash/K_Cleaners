@@ -14,11 +14,14 @@
       <img src="Assets/Images/logo.png" alt="K Cleaners Logo">
       <h1 class="site-tittle">K Cleaners</h1>
     </div>
+        <div class="menu-toggle" id="menu-toggle">
+      <span class="material-icons">menu</span>
+    </div>
     <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
     </nav>
   </header>
 
@@ -27,7 +30,7 @@
     <div class="hero-text">
       <h1>Bringing Shine to Every Space</h1>
       <p>Life’s too short to worry about stains and piles of laundry. At K Cleaners, we handle the mess so you can enjoy the moments that matter. With our professional care, your clothes come back soft, bright, and feeling brand new every single time.</p>
-      <button class="btn-primary">Book a Service</button>
+      <button class="btn btn-primary">Book a Service</button>
     </div>
     </section>
    
@@ -43,7 +46,7 @@
   </div>
 </section>
   <!-- Services Section -->
-  <section class="services">
+  <section id="services" class="services">
     <h2>Our Services</h2>
         <div class="service-cards">
           <div class="card card-1">
@@ -121,9 +124,11 @@
             <span class="material-icons">house</span>
             <h3 class="card-headers">More Cleaning</h3>
             <ol class="items">
-              <li>Home</li>
-              <li>Office</li>
-              <li>Car</li>
+              <li>Home cleaning</li>
+              <li>Office cleaning</li>
+              <li>Car detailing</li>
+              <li>Facility Cleaning</li>
+              <li>Industrial Cleaning</li>
             </ol>
           </div>
         </div>
@@ -207,5 +212,12 @@
       <span class="material-icons">call</span>
     </div>
   </footer>
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
