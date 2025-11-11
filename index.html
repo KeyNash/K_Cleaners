@@ -9,15 +9,17 @@
 </head>
 <body>
   <!-- Navbar -->
-  <header class="Header-container">
-    <div class="logo">
-      <img src="Assets/Images/logo.png" alt="K Cleaners Logo">
-      <h1 class="site-tittle">K Cleaners</h1>
+    <header class="Header-container">
+    <div class="header-row">
+      <div class="logo">
+        <img src="Assets/Images/logo.png" alt="K Cleaners Logo">
+        <h1 class="site-tittle">K Cleaners</h1>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="material-icons">menu</span>
+      </div>
     </div>
-        <div class="menu-toggle" id="menu-toggle">
-      <span class="material-icons">menu</span>
-    </div>
-    <nav class="nav-links">
+    <nav id="nav-links" class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -30,7 +32,7 @@
     <div class="hero-text">
       <h1>Bringing Shine to Every Space</h1>
       <p>Life’s too short to worry about stains and piles of laundry. At K Cleaners, we handle the mess so you can enjoy the moments that matter. With our professional care, your clothes come back soft, bright, and feeling brand new every single time.</p>
-      <button class="btn btn-primary">Book a Service</button>
+      <a href="#contact"><button class="btn btn-primary">Book a Service</button></a>
     </div>
     </section>
    
@@ -137,50 +139,41 @@
     <div class="contact-container">
       <div class="contact-form">
         <h2>Contact Us</h2>
-        <p class="muted">Questions or bookings? Send a message and we’ll get back within 24 hours.</p>
-        <form aria-label="Contact form">
-          <div class="field-row">
-            <label for="name" class="visually-hidden">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required>
-            <label for="email" class="visually-hidden">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@domain.com" required>
-          </div>
-          <div class="field-row">
-            <label for="phone" class="visually-hidden">Phone</label>
-            <input id="phone" name="phone" type="tel" placeholder="+256 7xx xxx xxx">
-          </div>
-          <label for="message" class="visually-hidden">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
-          <button type="submit" class="btn-primary contact-submit">Send Message</button>
-        </form>
       </div>
-
-      <aside class="contact-info" aria-label="Contact information">
+            <aside class="contact-info" aria-label="Contact information">
         <h3>Get in touch</h3>
         <div class="info-item">
           <span class="material-icons">place</span>
           <div>
             <strong>Location</strong>
-            <div>123 Clean St, Kampala, Uganda</div>
+            <div>
+              <a href="https://maps.app.goo.gl/Ub1JdbFdkx8qF3Ki7" target="_blank" rel="noopener">
+                Roadblock, Eldoret, Kenya
+              </a>
+            </div>
           </div>
         </div>
-
+      
         <div class="info-item">
           <span class="material-icons">call</span>
           <div>
             <strong>Phone</strong>
-            <div>+256 700 000 000</div>
+            <div>
+              <a href="tel:+254795956587">+254 795 956 587</a>
+            </div>
           </div>
         </div>
-
+      
         <div class="info-item">
           <span class="material-icons">email</span>
           <div>
             <strong>Email</strong>
-            <div>hello@kcleaners.example</div>
+            <div>
+              <a href="kcleaners733@gmail.com">kcleaners733@gmail.com</a>
+            </div>
           </div>
         </div>
-
+      
         <div class="info-item">
           <span class="material-icons">schedule</span>
           <div>
@@ -188,16 +181,30 @@
             <div>Mon–Sat: 8:00 — 18:00</div>
           </div>
         </div>
-
+        <div class="info-item">
+          <span class="material-icons">message</span>
+          <div>
+            <strong>WhatsApp</strong>
+            <div>
+              <a href="https://wa.me/254795956587" target="_blank" rel="noopener">
+                Chat with us on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      
         <div class="socials-row">
-          <a href="#" aria-label="Facebook" class="social">
-            <span class="material-icons">facebook</span>
-          </a>
-          <a href="#" aria-label="Instagram" class="social">
-            <span class="material-icons">instagram</span>
-          </a>
-          <a href="#" aria-label="WhatsApp" class="social">
+          <a href="https://wa.me/254795956587" aria-label="WhatsApp" class="social" target="_blank" rel="noopener">
             <span class="material-icons">chat</span>
+          </a>
+          <a href="kcleaners733@gmail.com" aria-label="Email" class="social" target="_blank" rel="noopener">
+            <span class="material-icons">email</span>
+          </a>
+          <a href="tel:+254795946587" aria-label="Call" class="social" target="_blank" rel="noopener">
+            <span class="material-icons">call</span>
+          </a>
+          <a href="https://maps.app.goo.gl/Ub1JdbFdkx8qF3Ki7" aria-label="Location" class="social" target="_blank" rel="noopener">
+            <span class="material-icons">place</span>
           </a>
         </div>
       </aside>
@@ -207,9 +214,15 @@
   <footer class="footer">
     <p>&copy; 2025 K Cleaners. All rights reserved.</p>
     <div class="socials">
-      <span class="material-icons">facebook</span>
-      <span class="material-icons">instagram</span>
-      <span class="material-icons">call</span>
+      <a href="https://wa.me/254795956587">
+        <span class="material-icons">message</span>
+      </a>
+      <a href="kcleaners733@gmail.com">
+        <span class="material-icons">email</span>
+      </a>
+      <a href="tel:+254795946587">
+        <span class="material-icons">call</span>
+      </a>
     </div>
   </footer>
     <script>
